@@ -7,14 +7,33 @@
     <title>Array</title>
 </head>
 <body>
+    <!-- Array -->
+    
     <?php
     $numbers = array(0,1,2,3,4);
     unset($numbers[2]);
     var_dump($numbers);
     ?>
+    <br />
     <?php 
     $color = array("key1"=>"Blue","key2"=>"Red","key3"=>"Green");
     unset($color["key2"]);
-    var_dump($color);    ?>
+    var_dump($color);
+   
+    
+    ?>
+<br />
+    <!-- Loops -->
+    <?php	
+    for ($i=1; $i<=5; $i++)	
+    {	 
+    for($j=1;$j<=$i;$j++)	  
+    {	  	
+    echo " * ";	 
+    }	  	 
+    echo "<br/>";   	
+}  
+?> 
+<br />
 </body>
 </html>
