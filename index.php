@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array</title>
+    <title>Array&Loops</title>
 </head>
 <body>
     <!-- Array -->
@@ -34,6 +34,30 @@
     echo "<br/>";   	
 }  
 ?> 
+
+<?php
+$arr = array('Hello','Have','a','Good','day!');
+echo implode(" ",$arr);
+?>
 <br />
+<?php
+$str = "Hello It's a beautiful day.";
+print_r (explode(" ",$str));
+?>
+
+<br />
+<?php
+$array = array(1, 2, 2, 3);
+$array = array_unique($array); 
+print_r ($array);
+?>
+<script>
+  var myArray = ['a', 1, 'a', 2, '1'];
+
+let unique = [...new Set(myArray)];
+
+console.log(unique);
+ 
+</script>
 </body>
 </html>
