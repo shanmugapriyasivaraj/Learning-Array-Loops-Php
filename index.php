@@ -59,5 +59,46 @@ let unique = [...new Set(myArray)];
 console.log(unique);
  
 </script>
+
+  
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<!-- .append() -->
+<p>I would like to say: </p>
+ 
+<script>
+$( "p" ).append( "Hello" );
+</script>
+
+<!-- .html() -->
+<p>Hello</p>
+<div></div>
+<div></div>
+<div></div>
+ 
+ <script>
+$( "div" ).html( "Hello" );
+</script>
+<p>Test Paragraph.</p>
+ 
+<script>
+$( "p" ).text( "new text" );
+</script>
+<input type="text" id="text1" value="..." />
+<button id="button1">Set value</button>
+  <script>
+    $("#button1").click(function (e) {
+    $("#text1").val("Hi");
+});
+  </script>
+
+<p><a href="https://www.google.com/" id="google">Google</a></p>
+<button>Change href Value</button>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#google").attr("href", "https://flipkart.com");
+  });
+});
+</script>
 </body>
 </html>
